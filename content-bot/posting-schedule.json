@@ -1,0 +1,153 @@
+{
+  "posting_schedule": {
+    "tiktok": {
+      "enabled": true,
+      "platform": "TikTok",
+      "times": ["08:00", "18:00"],
+      "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "frequency": "2x per day",
+      "content_per_day": 2,
+      "optimal_days": ["Wednesday", "Friday", "Saturday"],
+      "engagement_peak": ["10:00-11:00", "19:00-20:00"],
+      "notes": "Best engagement on evenings and weekends"
+    },
+    "instagram": {
+      "enabled": true,
+      "platform": "Instagram",
+      "times": ["09:00", "18:00"],
+      "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "frequency": "2x per day",
+      "content_per_day": 2,
+      "optimal_days": ["Tuesday", "Wednesday", "Thursday"],
+      "engagement_peak": ["08:00-10:00", "17:00-19:00"],
+      "notes": "Auto-share from TikTok Reels when possible"
+    },
+    "twitter": {
+      "enabled": true,
+      "platform": "Twitter",
+      "times": ["09:00", "12:00", "15:00", "18:00", "21:00"],
+      "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "frequency": "5x per day",
+      "content_per_day": 5,
+      "optimal_days": ["Tuesday", "Wednesday", "Thursday"],
+      "engagement_peak": ["08:00-10:00", "12:00-13:00", "17:00-19:00"],
+      "notes": "Morning and afternoon posts perform best"
+    },
+    "linkedin": {
+      "enabled": true,
+      "platform": "LinkedIn",
+      "times": ["07:00", "16:00"],
+      "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "frequency": "2x per day",
+      "content_per_day": 2,
+      "optimal_days": ["Tuesday", "Wednesday", "Thursday"],
+      "engagement_peak": ["07:00-09:00", "16:00-17:00"],
+      "notes": "Professional content, best on weekdays"
+    },
+    "reddit": {
+      "enabled": true,
+      "platform": "Reddit",
+      "times": ["10:00", "19:00"],
+      "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "frequency": "2x per day",
+      "content_per_day": 2,
+      "optimal_subreddits": ["ChatGPT", "productivity", "automation", "AITools", "OpenAI"],
+      "engagement_peak": ["10:00-12:00", "19:00-21:00"],
+      "notes": "Community-first approach, be helpful not salesy"
+    },
+    "medium": {
+      "enabled": true,
+      "platform": "Medium",
+      "times": ["08:00"],
+      "days": ["Wednesday", "Sunday"],
+      "frequency": "2x per week",
+      "content_per_week": 2,
+      "content_type": "long-form blog posts",
+      "optimal_days": ["Wednesday", "Sunday"],
+      "engagement_peak": ["08:00-12:00"],
+      "notes": "2000+ word articles, posted early morning"
+    },
+    "email": {
+      "enabled": true,
+      "platform": "Email",
+      "days": [1, 3, 5],
+      "day_names": ["Tuesday", "Thursday", "Saturday"],
+      "times": ["10:00"],
+      "frequency": "3x per week",
+      "content_per_week": 3,
+      "email_types": ["daily_tool", "weekly_roundup", "affiliate_promotion"],
+      "optimal_send_time": "10:00 AM",
+      "notes": "Morning sends perform better, varies by list"
+    },
+    "blog": {
+      "enabled": true,
+      "platform": "Blog",
+      "days": [2, 6],
+      "day_names": ["Wednesday", "Sunday"],
+      "times": ["08:00"],
+      "frequency": "2x per week",
+      "content_per_week": 2,
+      "content_type": "2000+ word articles with SEO",
+      "notes": "Long-form content for organic search"
+    }
+  },
+  "timing_strategy": {
+    "timezone": "UTC",
+    "conversion_to_other_timezones": {
+      "PST": "-8 hours",
+      "CST": "-6 hours",
+      "EST": "-5 hours",
+      "GMT": "+0 hours",
+      "CET": "+1 hour",
+      "IST": "+5:30 hours",
+      "SGT": "+8 hours",
+      "JST": "+9 hours",
+      "AEST": "+10 hours"
+    }
+  },
+  "daily_schedule": {
+    "00:00": [],
+    "07:00": ["linkedin"],
+    "08:00": ["tiktok", "medium", "blog"],
+    "09:00": ["twitter", "instagram"],
+    "10:00": ["reddit", "email"],
+    "12:00": ["twitter"],
+    "15:00": ["twitter"],
+    "16:00": ["linkedin"],
+    "18:00": ["tiktok", "instagram", "twitter"],
+    "19:00": ["reddit"],
+    "21:00": ["twitter"]
+  },
+  "weekly_content_quota": {
+    "tiktok": 14,
+    "instagram": 14,
+    "twitter": 35,
+    "linkedin": 14,
+    "reddit": 14,
+    "medium": 2,
+    "email": 3,
+    "blog": 2,
+    "total": 98
+  },
+  "seasonal_adjustments": {
+    "note": "Adjust times based on audience timezone during major events",
+    "black_friday": {
+      "increase_posting": true,
+      "extra_affiliate_content": true,
+      "aggressive_email": true
+    },
+    "holidays": {
+      "adjust_schedule": true,
+      "reduce_frequency": false,
+      "focus_on_value": true
+    }
+  },
+  "ab_testing": {
+    "enabled": true,
+    "test_time_slots": true,
+    "test_content_types": true,
+    "test_frequency": true,
+    "analyze_weekly": true,
+    "optimize_based_on": ["engagement_rate", "click_through_rate", "conversion_rate"]
+  }
+}

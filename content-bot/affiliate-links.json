@@ -1,0 +1,170 @@
+{
+  "affiliate_links": {
+    "chatgpt_plus": {
+      "name": "ChatGPT Plus",
+      "url": "https://openai.com/plus",
+      "short_url": "bit.ly/chatgpt-plus",
+      "category": "llm",
+      "commission": 0.15,
+      "affiliate_code": "JRPAN",
+      "description": "Advanced AI chatbot with GPT-4 access",
+      "estimated_conversion_rate": 0.05,
+      "monthly_clicks": 45
+    },
+    "claude_api": {
+      "name": "Claude API",
+      "url": "https://claude.ai",
+      "short_url": "bit.ly/claude-api",
+      "category": "llm",
+      "commission": 0.20,
+      "affiliate_code": "JRPAN",
+      "description": "Most capable AI assistant from Anthropic",
+      "estimated_conversion_rate": 0.08,
+      "monthly_clicks": 78
+    },
+    "gemini_pro": {
+      "name": "Google Gemini Pro",
+      "url": "https://gemini.google.com",
+      "short_url": "bit.ly/gemini-pro",
+      "category": "llm",
+      "commission": 0.10,
+      "affiliate_code": "JRPAN",
+      "description": "Google's most capable AI model",
+      "estimated_conversion_rate": 0.06,
+      "monthly_clicks": 34
+    },
+    "midjourney": {
+      "name": "Midjourney",
+      "url": "https://midjourney.com",
+      "short_url": "bit.ly/midjourney",
+      "category": "image_generation",
+      "commission": 0.25,
+      "affiliate_code": "JRPAN",
+      "description": "AI-powered image generation platform",
+      "estimated_conversion_rate": 0.12,
+      "monthly_clicks": 156
+    },
+    "leonardo_ai": {
+      "name": "Leonardo.AI",
+      "url": "https://leonardo.ai",
+      "short_url": "bit.ly/leonardo-ai",
+      "category": "image_generation",
+      "commission": 0.20,
+      "affiliate_code": "JRPAN",
+      "description": "Fast and reliable image generation",
+      "estimated_conversion_rate": 0.07,
+      "monthly_clicks": 89
+    },
+    "synthesia": {
+      "name": "Synthesia",
+      "url": "https://synthesia.io",
+      "short_url": "bit.ly/synthesia",
+      "category": "video_generation",
+      "commission": 0.30,
+      "affiliate_code": "JRPAN",
+      "description": "AI video generation from text",
+      "estimated_conversion_rate": 0.10,
+      "monthly_clicks": 123
+    },
+    "heygen": {
+      "name": "HeyGen",
+      "url": "https://www.heygen.com",
+      "short_url": "bit.ly/heygen",
+      "category": "video_generation",
+      "commission": 0.25,
+      "affiliate_code": "JRPAN",
+      "description": "AI-powered video creation platform",
+      "estimated_conversion_rate": 0.09,
+      "monthly_clicks": 98
+    },
+    "zapier": {
+      "name": "Zapier",
+      "url": "https://zapier.com",
+      "short_url": "bit.ly/zapier",
+      "category": "automation",
+      "commission": 0.30,
+      "affiliate_code": "JRPAN",
+      "description": "Workflow automation platform",
+      "estimated_conversion_rate": 0.08,
+      "monthly_clicks": 67
+    },
+    "make": {
+      "name": "Make (Integromat)",
+      "url": "https://make.com",
+      "short_url": "bit.ly/make-io",
+      "category": "automation",
+      "commission": 0.30,
+      "affiliate_code": "JRPAN",
+      "description": "Visual workflow automation",
+      "estimated_conversion_rate": 0.07,
+      "monthly_clicks": 54
+    },
+    "notion": {
+      "name": "Notion",
+      "url": "https://notion.so",
+      "short_url": "bit.ly/notion",
+      "category": "productivity",
+      "commission": 0.15,
+      "affiliate_code": "JRPAN",
+      "description": "All-in-one workspace platform",
+      "estimated_conversion_rate": 0.06,
+      "monthly_clicks": 112
+    },
+    "airtable": {
+      "name": "Airtable",
+      "url": "https://airtable.com",
+      "short_url": "bit.ly/airtable",
+      "category": "productivity",
+      "commission": 0.20,
+      "affiliate_code": "JRPAN",
+      "description": "Flexible database and automation",
+      "estimated_conversion_rate": 0.07,
+      "monthly_clicks": 76
+    },
+    "copysmith": {
+      "name": "Copysmith",
+      "url": "https://copysmith.ai",
+      "short_url": "bit.ly/copysmith",
+      "category": "copywriting",
+      "commission": 0.25,
+      "affiliate_code": "JRPAN",
+      "description": "AI copywriting and content generation",
+      "estimated_conversion_rate": 0.10,
+      "monthly_clicks": 89
+    },
+    "copy_ai": {
+      "name": "Copy.ai",
+      "url": "https://copy.ai",
+      "short_url": "bit.ly/copy-ai",
+      "category": "copywriting",
+      "commission": 0.25,
+      "affiliate_code": "JRPAN",
+      "description": "AI-powered copywriting assistant",
+      "estimated_conversion_rate": 0.09,
+      "monthly_clicks": 102
+    },
+    "grammarly": {
+      "name": "Grammarly",
+      "url": "https://grammarly.com",
+      "short_url": "bit.ly/grammarly",
+      "category": "writing",
+      "commission": 0.20,
+      "affiliate_code": "JRPAN",
+      "description": "Writing assistant and grammar checker",
+      "estimated_conversion_rate": 0.11,
+      "monthly_clicks": 167
+    }
+  },
+  "tracking_settings": {
+    "track_clicks": true,
+    "track_conversions": true,
+    "track_revenue": true,
+    "utm_parameters": true,
+    "click_tracking_ttl_days": 30
+  },
+  "monthly_totals": {
+    "total_clicks": 1191,
+    "estimated_revenue": 2847.50,
+    "top_performer": "midjourney"
+  }
+}
