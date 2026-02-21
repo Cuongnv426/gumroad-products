@@ -1,0 +1,163 @@
+{
+  "1_master_task_manager": {
+    "name": "Master Task Manager",
+    "description": "Central hub for all tasks with priority levels, progress tracking, and deadline management",
+    "color_scheme": {
+      "header": "#1F3A93",
+      "high_priority": "#E74C3C",
+      "medium_priority": "#F39C12",
+      "low_priority": "#27AE60",
+      "completed": "#BDC3C7",
+      "accent": "#3498DB"
+    },
+    "features": [
+      "Color-coded priority levels (High/Medium/Low)",
+      "Progress slider (0-100%)",
+      "Deadline tracking with automatic formatting",
+      "Status indicators (Not Started/In Progress/Blocked/Completed)",
+      "Task owner assignment",
+      "Category filtering",
+      "Summary dashboard showing completion rate"
+    ]
+  },
+  "2_weekly_planner": {
+    "name": "Weekly Planner",
+    "description": "Visual weekly schedule with time blocks, activity types, and daily focus areas",
+    "color_scheme": {
+      "work": "#3498DB",
+      "personal": "#9B59B6",
+      "health": "#E74C3C",
+      "learning": "#F39C12",
+      "leisure": "#1ABC9C"
+    },
+    "features": [
+      "Mon-Sun layout with hourly time blocks",
+      "Color-coded activity types with icons",
+      "Focus hours highlighting (deep work time)",
+      "Weekly habits tracker sidebar",
+      "Mini dashboard with time allocation chart",
+      "Notes section for weekly goals",
+      "Productivity score calculation"
+    ]
+  },
+  "3_30day_habit_tracker": {
+    "name": "30-Day Habit Tracker",
+    "description": "Track daily habits with visual progress indicators and streak counting",
+    "features": [
+      "30-day grid with checkbox visualization",
+      "Streak counter (current & longest)",
+      "Habit categories with icons",
+      "Completion percentage by week",
+      "Progress bar visualization",
+      "Motivation quotes rotating daily",
+      "Habit success rate history",
+      "Weekly summary with insights"
+    ]
+  },
+  "4_project_manager": {
+    "name": "Project Manager",
+    "description": "Comprehensive project tracking with Gantt visualization and team assignments",
+    "features": [
+      "Project overview dashboard",
+      "Task list with dependencies",
+      "Gantt-style timeline visualization",
+      "Team member assignments",
+      "Priority and status tracking",
+      "Budget tracking by task",
+      "Resource allocation chart",
+      "Project completion percentage",
+      "Risk/issues log"
+    ]
+  },
+  "5_budget_tracker": {
+    "name": "Budget Tracker",
+    "description": "Income and expense tracking with visual analytics and category breakdown",
+    "color_scheme": {
+      "income": "#27AE60",
+      "expenses": "#E74C3C",
+      "savings": "#3498DB"
+    },
+    "features": [
+      "Income vs expenses monthly chart",
+      "Category-wise expense breakdown pie chart",
+      "Budget vs actual comparison",
+      "Savings rate calculation",
+      "Recurring expenses tracking",
+      "Cash flow forecast",
+      "Monthly trends visualization",
+      "Category limits and alerts"
+    ]
+  },
+  "6_time_blocker": {
+    "name": "Time Blocker",
+    "description": "Detailed time blocking schedule with focus hours and activity tracking",
+    "features": [
+      "15-minute time block precision",
+      "Color-coded activity blocks",
+      "Focus hours highlighted in bold",
+      "Daily focus theme",
+      "Time tracking for actual hours spent",
+      "Break reminders built-in",
+      "Weekly time audit summary",
+      "Focus score tracking"
+    ]
+  },
+  "7_goal_tracker": {
+    "name": "Goal Tracker",
+    "description": "SMART goal setting with milestone tracking and progress visualization",
+    "features": [
+      "SMART goal template (Specific, Measurable, Achievable, Relevant, Time-bound)",
+      "Milestone checkpoints",
+      "Progress percentage visualization",
+      "Key results sub-tracking",
+      "Weekly check-in prompts",
+      "Obstacle identification",
+      "Accountability partner tracking",
+      "Goal success/failure analysis"
+    ]
+  },
+  "8_content_calendar": {
+    "name": "Content Calendar",
+    "description": "Multi-platform content planning with status indicators and performance metrics",
+    "features": [
+      "Platform selection (Instagram/Facebook/LinkedIn/TikTok/YouTube/Blog)",
+      "Content type indicators (Video/Carousel/Quote/Educational/Promotional)",
+      "Publishing schedule",
+      "Status tracking (Idea/Draft/Scheduled/Published)",
+      "Performance metrics (Likes/Comments/Shares/Views)",
+      "Caption preview",
+      "Hashtag management",
+      "Monthly content matrix"
+    ]
+  },
+  "9_daily_journal": {
+    "name": "Daily Journal",
+    "description": "Reflective journaling with mood tracking and gratitude logging",
+    "features": [
+      "Mood tracker with emoji visualization",
+      "Daily gratitude log (3 things)",
+      "Reflection prompts rotating daily",
+      "Energy level tracking (1-10)",
+      "Win of the day section",
+      "Lessons learned capture",
+      "Tomorrow's focus area",
+      "Sentiment analysis over time",
+      "Monthly insights summary"
+    ]
+  },
+  "10_affiliate_tracker": {
+    "name": "Affiliate Tracker",
+    "description": "Commission tracking, earnings analysis, and affiliate partnership performance",
+    "features": [
+      "Affiliate program tracking",
+      "Commission rate monitoring",
+      "Monthly earnings calculator",
+      "Performance metrics (clicks/conversions/revenue)",
+      "Payout schedule tracking",
+      "Growth rate visualization",
+      "Top performing programs ranking",
+      "Revenue forecast by program",
+      "Action items for underperformers"
+    ]
+  }
+}

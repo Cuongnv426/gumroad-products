@@ -1,0 +1,11 @@
+Date,Category,Description,Amount,Type,Status
+2024-01-01,Salary,Monthly Salary,5000,Income,Received
+2024-01-02,Utilities,Electric Bill,150,Expense,Paid
+2024-01-03,Groceries,Weekly Groceries,120,Expense,Paid
+2024-01-05,Freelance,Consulting Project,1500,Income,Received
+2024-01-07,Rent,Monthly Rent,1200,Expense,Paid
+2024-01-10,Dining,Restaurants,85,Expense,Paid
+2024-01-12,Entertainment,Streaming Services,45,Expense,Paid
+2024-01-15,Bonus,Performance Bonus,800,Income,Received
+2024-01-20,Healthcare,Medical Checkup,200,Expense,Paid
+2024-01-25,Shopping,Clothing,150,Expense,Pending

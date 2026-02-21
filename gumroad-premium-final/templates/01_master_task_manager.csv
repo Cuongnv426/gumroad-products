@@ -1,0 +1,7 @@
+Task ID,Task Name,Category,Priority,Status,Assigned To,Start Date,Due Date,Progress %,Notes
+TK001,Q1 Strategic Planning,Business,High,In Progress,Sarah,2024-01-01,2024-01-31,75,Quarterly planning session
+TK002,Website Redesign,Projects,High,Blocked,John,2024-01-05,2024-02-15,40,Waiting on design approval
+TK003,Email Campaign Launch,Marketing,Medium,In Progress,Emma,2024-01-08,2024-01-20,60,Copywriting in progress
+TK004,Team Meeting Prep,Admin,Medium,Not Started,Sarah,2024-01-15,2024-01-17,0,Agenda needed
+TK005,Client Presentation,Sales,High,Completed,Mike,2024-01-01,2024-01-10,100,Great feedback received
+TK006,Documentation Update,Admin,Low,Not Started,Alex,2024-01-10,2024-02-28,0,Can be scheduled later
