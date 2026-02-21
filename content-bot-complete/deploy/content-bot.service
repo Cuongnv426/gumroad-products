@@ -1,0 +1,20 @@
+[Unit]
+Description=Content Bot - Automated Content Generation
+Documentation=https://github.com/contentbot/docs
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=contentbot
+WorkingDirectory=/opt/content-bot
+Environment="PATH=/opt/content-bot/venv/bin"
+ExecStart=/opt/content-bot/venv/bin/python /opt/content-bot/src/bot_main.py start
+Restart=always
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=content-bot
+
+[Install]
+WantedBy=multi-user.target

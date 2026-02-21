@@ -1,0 +1,255 @@
+===== TWITTER TEMPLATES (280 CHARS) =====
+
+Template 1: Question Engagement
+"What's the [TOPIC] tool you can't live without? I'll start: [PRODUCT]. Saves me [X] hours/week. 🧵"
+
+Template 2: Stat-Driven
+"[NUMBER]% of [AUDIENCE] don't use [TOOL] yet. If you're one of them, here's what you're missing..."
+
+Template 3: Personal Story
+"I used to spend [X] hours on [TASK]. Then [PRODUCT] changed everything. Now? [Y] minutes max. 💡"
+
+Template 4: Hot Take
+"Hot take: [CONTROVERSIAL OPINION about TOPIC]. Here's why most people get it wrong... 🧵"
+
+Template 5: Listicle
+"5 [TOPIC] hacks that actually work:
+1. [Hack 1]
+2. [Hack 2]
+3. [Hack 3]
+4. [Hack 4]
+5. [Hack 5]"
+
+Template 6: How-To
+"How to [ACHIEVE GOAL] in [TIME]:
+Step 1: [Step]
+Step 2: [Step]
+Step 3: [Step]
+Works every time."
+
+Template 7: Before/After
+"Before: [NEGATIVE SITUATION]
+After using [PRODUCT]: [POSITIVE RESULT]
+The difference? [KEY BENEFIT]"
+
+Template 8: Comparison
+"[TOOL A] vs [TOOL B]:
+[TOOL A]: Best for [USE CASE]
+[TOOL B]: Best for [USE CASE]
+I use both. Here's when: 🧵"
+
+===== LINKEDIN TEMPLATES (300+ WORDS) =====
+
+Template 1: Professional Story
+"How [PRODUCT] Helped Me [ACHIEVE RESULT]
+
+When I first started [ROLE/BUSINESS], I was overwhelmed.
+
+Too much to do. Too little time.
+
+That's when I discovered [PRODUCT].
+
+And everything changed.
+
+Here's what happened:
+
+[Story paragraph about problem]
+
+Then [Product] solved it by [Solution].
+
+The result? [Specific metrics/improvements]
+
+If you're dealing with [Problem], here's what worked for me:
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+Don't wait 6 months like I did.
+
+Learn from my journey.
+
+[Link to product/article]
+
+#[Hashtag] #[Hashtag] #[Hashtag]"
+
+Template 2: Thought Leadership
+"The Future of [INDUSTRY] is [PREDICTION]
+
+After [TIME PERIOD] in [FIELD], I've noticed a shift.
+
+Most [AUDIENCE] are still doing [OLD WAY].
+
+But the winners? They're switching to [NEW WAY].
+
+Why does this matter?
+
+[Explanation of impact]
+
+The companies/people winning now are:
+✓ [Trend 1]
+✓ [Trend 2]
+✓ [Trend 3]
+
+The question isn't IF you'll adapt.
+
+It's WHEN.
+
+Here's my framework for [ADAPTING/STAYING AHEAD]:
+[Detailed framework]
+
+What's your take? 👇"
+
+===== EMAIL TEMPLATES (PROMOTIONAL) =====
+
+Subject: "[PAIN POINT] Costing You [AMOUNT]? Not Anymore"
+
+Hi [NAME],
+
+[PAIN POINT] is crushing businesses right now.
+
+The sad part? Most don't realize how much it's costing them.
+
+Let me break it down:
+
+If you're losing [X hours/Y revenue] to [PROBLEM], that's:
+- [X hours] × 52 weeks = [TOTAL]
+- Or [Y] × 12 months = [TOTAL REVENUE LOST]
+
+That's [AMOUNT] you could be keeping.
+
+Here's the thing: [PRODUCT] solves this in [X] minutes.
+
+How?
+✓ [Benefit 1]
+✓ [Benefit 2]
+✓ [Benefit 3]
+
+The ROI is immediate.
+
+[SPECIFIC METRIC] have seen [RESULT] in the first week.
+
+You could be next.
+
+[Call to Action]
+
+- [Signature]
+
+===== REDDIT TEMPLATES =====
+
+Template 1: Helpful Comment
+"Not sure if anyone mentioned [PRODUCT], but it's been a game-changer for [USE CASE].
+
+Does [BENEFIT] automatically and saves [X] hours/week.
+
+Worth checking out if you're looking for [SOLUTION].
+
+[Link to affiliate]"
+
+Template 2: Post
+"[QUESTION/TOPIC]
+
+I'm in [SITUATION], and [PRODUCT] has been incredible for [REASON].
+
+Setup took 10 minutes, and it's paid for itself 10x over.
+
+Anyone else use it?"
+
+===== MEDIUM TEMPLATES =====
+
+"Why [PRODUCT] is Changing [INDUSTRY]
+
+[Introduction with hook]
+
+The Current Problem
+
+[2-3 paragraphs about the problem most people face]
+
+Enter [PRODUCT]
+
+[How product solves the problem]
+
+The Results
+
+[Case studies or personal results]
+
+Why This Matters
+
+[Impact on industry/future]
+
+My Experience
+
+[Personal story of using the product]
+
+How to Get Started
+
+[Step-by-step guide]
+
+Conclusion
+
+[Wrap up and call to action]"
+
+===== INSTAGRAM CAPTION TEMPLATES =====
+
+Template 1: Carousel
+"Swipe through for [X] [TOPIC] tips that changed my life 📸
+Tip #[N]: [Tip]
+Save this post.
+#[Hashtag] #[Hashtag] #[Hashtag]"
+
+Template 2: Story
+"POV: You just discovered [PRODUCT]
+
+That's literally the reaction everyone has.
+
+[Detail about product]
+
+[Emoji] [Emoji] [Emoji]
+
+Link in bio to try it →"
+
+Template 3: Reel
+"This [PRODUCT] hack saves [X] hours/week
+
+Here's how:
+[Hook about problem]
+[Solution]
+[Result]
+
+Who else uses this? Let me know 👇"
+
+===== REPURPOSING ACROSS PLATFORMS =====
+
+1 Blog Post → Twitter (10 tweets)
+→ LinkedIn (1 professional article)
+→ Reddit (2-3 posts)
+→ Email (2-3 emails)
+→ Medium (1 detailed post)
+→ Instagram (3-5 captions)
+Total: 20+ pieces from 1 source
+
+===== HOOKS THAT WORK =====
+
+Numbers:
+"[X] people are doing [THING] wrong..."
+"[X]% of [AUDIENCE] don't know..."
+"I've tested [X] [TOOLS]..."
+
+Questions:
+"What if [CONTROVERSIAL IDEA]?"
+"Do you really need [PRODUCT]?"
+"Have you tried [HACK]?"
+
+Stories:
+"I used to [NEGATIVE]..."
+"This [PRODUCT] changed my life..."
+"Last week, [STORY]..."
+
+Contrasts:
+"Everyone says [COMMON BELIEF]. They're wrong..."
+"You've been told [MYTH]. Here's the truth..."
+"Most [AUDIENCE] never [ACTION]..."
+
+Curiosity:
+"The algorithm doesn't want you to know this..."
+"[COMPANY] doesn't want you to see this..."
+"This [HACK] is too good to be true..."
