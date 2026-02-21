@@ -1,0 +1,465 @@
+════════════════════════════════════════════════════════════════════════════════
+              GOOGLE SHEETS TEMPLATES - SETUP & USAGE GUIDE
+════════════════════════════════════════════════════════════════════════════════
+
+This guide shows you exactly how to set up each Google Sheets template and get 
+the most out of it.
+
+════════════════════════════════════════════════════════════════════════════════
+SETUP INSTRUCTIONS
+════════════════════════════════════════════════════════════════════════════════
+
+METHOD 1: Import CSV Files (Recommended)
+─────────────────────────────────────────
+1. Go to Google Sheets (sheets.google.com)
+2. Click "Blank spreadsheet" or open existing
+3. Click "File" → "Import"
+4. Click "Upload" tab
+5. Select a CSV file from the bundle
+6. Choose "Create new spreadsheet" (or replace existing)
+7. Click "Import"
+8. Done! Sheet is ready to use
+
+METHOD 2: Copy & Paste
+──────────────────────
+1. Open CSV file in Excel or Google Sheets
+2. Copy all data
+3. Go to your Google Sheet
+4. Click a cell and paste
+
+METHOD 3: Manual Entry (For quick setup)
+────────────────────────────────────────
+1. Create new sheet
+2. Add column headers from the CSV
+3. Start entering your data
+4. Use the sample data as a reference
+
+════════════════════════════════════════════════════════════════════════════════
+01 - MASTER TASK MANAGER
+════════════════════════════════════════════════════════════════════════════════
+
+PURPOSE: Central hub for all your tasks with priority, status, and deadlines
+
+COLUMNS EXPLAINED:
+├─ Task: Name of the task/project
+├─ Category: Work, Personal, Health, etc. (create your own categories)
+├─ Priority: High, Medium, Low
+├─ Due Date: When it needs to be done (format: YYYY-MM-DD)
+├─ Status: Not Started, In Progress, Completed
+└─ Notes: Any additional context needed
+
+SETUP TIPS:
+→ Add a column "Owner" if using with team
+→ Use conditional formatting to color-code by priority
+→ Sort by Due Date to see what's urgent
+→ Filter by Status to see only "In Progress" items
+
+FORMULA EXAMPLE:
+Add this to count completed tasks: =COUNTIF(F:F,"Completed")
+
+HOW TO USE:
+• Add tasks as they come in (daily)
+• Update status every morning/evening
+• Review weekly and archive completed tasks
+• Reference when prioritizing your day
+
+════════════════════════════════════════════════════════════════════════════════
+02 - WEEKLY PLANNER
+════════════════════════════════════════════════════════════════════════════════
+
+PURPOSE: Hour-by-hour schedule optimized for your energy and priorities
+
+WHAT'S INCLUDED:
+├─ Time slots from 6am-6pm (modify to your schedule)
+├─ Color-coded by activity type:
+│  ├─ Deep Work (blue)
+│  ├─ Meetings (green)
+│  ├─ Admin (yellow)
+│  └─ Personal (purple)
+└─ Monday-Friday (add weekend rows if needed)
+
+SETUP TIPS:
+→ Adjust time slots to match your actual schedule
+→ Schedule deep work during your peak energy hours
+→ Block meetings in clusters (not scattered)
+→ Protect lunch and breaks (non-negotiable)
+→ Add Friday afternoon for planning next week
+
+ADVANCED FEATURES:
+• Conditional formatting by activity type
+• Copy formula to duplicate successful weeks
+• Share with team to block collaborative time
+
+HOW TO USE:
+• Plan Monday morning before the week starts
+• Reference daily to stay on track
+• Adjust if something's not working
+• Update for next week every Friday
+
+════════════════════════════════════════════════════════════════════════════════
+03 - 30-DAY HABIT TRACKER
+════════════════════════════════════════════════════════════════════════════════
+
+PURPOSE: Build sustainable habits with visual tracking and streak motivation
+
+SETUP:
+1. Replace sample habits with your 10-15 target habits
+2. Keep habits small (2 minutes or less is ideal)
+3. Add formula to calculate completion percentage per habit
+
+FORMULA FOR COMPLETION %:
+=COUNTIF(B2:AE2,"✓")/30
+
+This shows what % of days you completed each habit.
+
+HABIT EXAMPLES:
+→ Morning routine (5 min)
+→ Exercise (30 min)
+→ Reading (15 min)
+→ Meditation (10 min)
+→ Water intake (throughout day)
+→ Gratitude practice (3 min)
+
+BEST PRACTICES:
+• Start with 1-2 habits, add more after 2 weeks
+• Pick habits that support your big goals
+• Log daily (same time each day works best)
+• 66 days = habit is automatic
+• Use ✓ or X or color coding - whatever works
+
+HOW TO USE:
+• Review each morning
+• Check off at end of day
+• Notice patterns (when you succeed/struggle)
+• Celebrate streaks!
+
+════════════════════════════════════════════════════════════════════════════════
+04 - PROJECT MANAGER
+════════════════════════════════════════════════════════════════════════════════
+
+PURPOSE: Manage multiple projects with visual progress tracking
+
+COLUMNS:
+├─ Project Name: Name of the major initiative
+├─ Task: Specific deliverable within project
+├─ Owner: Who's responsible
+├─ Timeline Start/End: When it happens
+├─ Duration: How long (auto-calculate)
+├─ Status: Not Started, In Progress, Completed
+├─ Progress %: Visual indicator
+├─ Priority: High/Medium/Low
+└─ Notes: Context and dependencies
+
+SETUP TIPS:
+→ One row = one task (not one project)
+→ Add dependent tasks in notes
+→ Use timeline for Gantt-style view (sort by start date)
+→ Update progress % weekly
+
+DURATION FORMULA:
+=(END_DATE-START_DATE)/7
+(This gives you weeks remaining)
+
+PROGRESS FORMULA:
+Use conditional formatting to show progress as colors
+
+HOW TO USE:
+• Add all projects and tasks upfront
+• Update progress weekly (Monday morning)
+• Filter by "In Progress" to focus
+• Identify bottlenecks (tasks blocking others)
+• Celebrate completed projects
+
+════════════════════════════════════════════════════════════════════════════════
+05 - BUDGET TRACKER
+════════════════════════════════════════════════════════════════════════════════
+
+PURPOSE: Track money in/out and understand spending patterns
+
+COLUMNS:
+├─ Date: When the transaction occurred
+├─ Category: Income, Expenses, or specific categories
+├─ Description: What is it?
+├─ Amount: Dollar value
+├─ Type: Income or Expense
+├─ Notes: Additional context
+└─ Recurring: Is this monthly, one-time, variable?
+
+SETUP TIPS:
+→ Create categories that match your business/life
+→ Log transactions as they happen
+→ Use consistent category names for filtering
+→ Mark recurring expenses so you know what's fixed
+
+USEFUL FORMULAS:
+Total Income: =SUMIF(E:E,"Income",D:D)
+Total Expenses: =SUMIF(E:E,"Expense",D:D)
+Monthly Recurring: =SUMIF(G:G,"Monthly",D:D)
+
+CHARTS TO ADD:
+→ Pie chart: Expense breakdown by category
+→ Line chart: Income vs expenses over time
+→ Bar chart: Category spending comparison
+
+HOW TO USE:
+• Daily: Log expenses and income
+• Weekly: Check if on budget
+• Monthly: Analyze patterns and trends
+• Quarterly: Plan for next quarter
+
+════════════════════════════════════════════════════════════════════════════════
+06 - TIME BLOCKER
+════════════════════════════════════════════════════════════════════════════════
+
+PURPOSE: Visual weekly schedule that optimizes for energy and productivity
+
+WHAT'S INCLUDED:
+└─ 1-hour time blocks for full week (6am-6pm weekdays, plus weekend)
+
+COLOR CODING SUGGESTIONS:
+├─ Deep Work (blue)
+├─ Meetings (red)
+├─ Admin/Email (yellow)
+├─ Break (green)
+├─ Personal (purple)
+└─ Personal Development (orange)
+
+SETUP TIPS:
+→ Plan your peak energy hours for deep work
+→ Cluster meetings together
+→ Include breaks (crucial for productivity)
+→ Show your calendar at work or home
+→ Adjust based on actual energy levels
+
+ADVANCED:
+→ Add notes about what to prepare
+→ Link to specific meetings/projects
+→ Share with team to block collaborative time
+
+HOW TO USE:
+• Set this up Sunday evening for the week
+• Check it when context switching
+• Adjust if things don't work
+• Save successful weeks and reuse
+
+════════════════════════════════════════════════════════════════════════════════
+07 - GOAL TRACKER
+════════════════════════════════════════════════════════════════════════════════
+
+PURPOSE: Track strategic goals from planning to completion
+
+COLUMNS:
+├─ Goal: What you're trying to achieve
+├─ Category: Business, Health, Personal, etc.
+├─ Target: Final number/state
+├─ Q1-Q4: Quarterly milestones
+├─ Status: On Track, At Risk, Behind, Blocked
+├─ Progress %: Visual completion
+├─ Owner: Who owns this goal
+└─ Notes: Context and learnings
+
+GOAL STRUCTURE (SMART):
+├─ Specific: Clear and measurable
+├─ Measurable: Numbers or clear definition
+├─ Achievable: Realistic but challenging
+├─ Relevant: Aligned with bigger vision
+└─ Time-bound: Quarterly breakdowns
+
+SETUP:
+1. List your 3-5 main goals for the year
+2. Break each into quarterly milestones
+3. Update progress % monthly
+4. Review and adjust quarterly
+
+HOW TO USE:
+• Review weekly (see progress)
+• Update monthly (adjust if needed)
+• Review quarterly (learn and plan next)
+• Celebrate wins!
+
+════════════════════════════════════════════════════════════════════════════════
+08 - CONTENT CALENDAR
+════════════════════════════════════════════════════════════════════════════════
+
+PURPOSE: Plan and track 30+ days of content across multiple platforms
+
+COLUMNS:
+├─ Date: Publish date
+├─ Platform: LinkedIn, Twitter, Blog, YouTube, etc.
+├─ Content Type: Article, Video, Thread, Poll, etc.
+├─ Topic: What it's about
+├─ Status: Draft, Scheduled, Published
+├─ Author: Who created it
+└─ Notes: Evergreen, trending, collaboration, etc.
+
+SETUP TIPS:
+→ Plan 30 days minimum at a time
+→ Mix content types (video, written, visual)
+→ Schedule content evenly across platforms
+→ Add "Evergreen" for content that works anytime
+→ Cross-link related content
+
+PLATFORM STRATEGY:
+├─ LinkedIn: 2-3x weekly (articles, posts, documents)
+├─ Twitter: 5-10x weekly (threads, quotes, hot takes)
+├─ Blog: 2x weekly (long-form, how-to)
+├─ Instagram: 3-5x weekly (visuals, stories)
+├─ YouTube: 1-2x weekly (videos)
+├─ Newsletter: 1x weekly (longer insights)
+└─ TikTok: 3-5x weekly (short, trendy)
+
+HOW TO USE:
+• Plan first week's content Friday afternoon
+• Add content as you create it
+• Schedule in advance (batching saves time)
+• Track what performs
+• Adjust strategy quarterly
+
+════════════════════════════════════════════════════════════════════════════════
+09 - DAILY JOURNAL
+════════════════════════════════════════════════════════════════════════════════
+
+PURPOSE: Reflect daily on mood, gratitude, and learning
+
+COLUMNS:
+├─ Date: Journal entry date
+├─ Mood (1-10): How you're feeling (1=terrible, 10=amazing)
+├─ Gratitude #1-3: Three things you're thankful for
+├─ Main Reflection: One key learning or observation
+├─ Tomorrow's Focus: What you're focusing on next day
+└─ Energy Level: How energized you feel (1-10)
+
+SETUP TIPS:
+→ Do this for 5-10 minutes at day's end
+→ Be honest about mood and energy
+→ Notice patterns over time
+→ Use reflections to guide next day
+
+PROMPTS IF STUCK:
+• Gratitude: Who helped me? What worked well? What am I lucky to have?
+• Reflection: What did I learn? What surprised me? What could I do better?
+• Tomorrow: What's my top priority? What would make tomorrow successful?
+
+ANALYSIS:
+→ Notice mood patterns (what affects it?)
+→ Track energy levels (when do you peak?)
+→ Review weekly (patterns emerging)
+→ Adjust schedule based on insights
+
+HOW TO USE:
+• 5 minutes each evening
+• Quick notes, not essays
+• Review weekly to see patterns
+• Use insights to improve next week
+
+════════════════════════════════════════════════════════════════════════════════
+10 - AFFILIATE/INCOME TRACKER
+════════════════════════════════════════════════════════════════════════════════
+
+PURPOSE: Track multiple income streams and calculate ROI
+
+COLUMNS:
+├─ Date: Transaction date
+├─ Source: Where the income came from
+├─ Product/Service: What was sold
+├─ Amount: Base revenue
+├─ Commission %: Your cut
+├─ Commission Amount: Your actual earnings
+├─ Status: Pending or Paid
+├─ Notes: Campaign, source, anything helpful
+└─ Traffic/Referrals: How many people/customers
+
+INCOME SOURCES:
+├─ Affiliate programs (10-20% commission)
+├─ Products you sell (70-100% margin)
+├─ Services (100% of what you charge)
+├─ Sponsorships (flat fees)
+├─ Courses (100% initially, minus platform fee)
+└─ Consulting/coaching (100% of rates)
+
+SETUP:
+1. List all your income sources
+2. Log transactions as they happen
+3. Mark status (pending or paid)
+4. Track commission rates
+
+USEFUL FORMULAS:
+Total Commission: =SUM(F:F)
+Average Order Value: =AVERAGE(D:D)
+Paid Total: =SUMIF(G:G,"Paid",F:F)
+Monthly Recurring: =SUMIF(B:B,"Monthly",F:F)
+
+ANALYSIS:
+→ What's your highest-revenue source?
+→ What has best margins?
+→ What needs more marketing?
+→ Where should you focus in 2024?
+
+HOW TO USE:
+• Log income as received
+• Update status when paid
+• Analyze monthly to see trends
+• Focus marketing on top performers
+
+════════════════════════════════════════════════════════════════════════════════
+ADVANCED FEATURES
+════════════════════════════════════════════════════════════════════════════════
+
+CONDITIONAL FORMATTING:
+→ Color-code cells by priority/status
+→ Highlight overdue items
+→ Shade weekends differently
+→ Highlight progress % visually
+
+DROPDOWN LISTS:
+→ Create dropdowns for Status, Priority, Category
+→ Makes data entry faster and consistent
+→ Ensures proper filtering and sorting
+
+FORMULAS TO COPY:
+→ Most examples above can be copy-pasted
+→ Adjust cell references for your columns
+→ Test on one row before applying to all
+
+CHARTS & GRAPHS:
+→ Budget tracker: Pie charts for spending
+→ Goal tracker: Progress bars
+→ Habit tracker: Completion percentages
+→ Content calendar: Upload trends
+
+SHARING:
+→ Share individual sheets with team members
+→ Use "View only" for reporting
+→ Use "Edit" for collaborative planning
+→ Lock headers to avoid accidental changes
+
+════════════════════════════════════════════════════════════════════════════════
+TROUBLESHOOTING
+════════════════════════════════════════════════════════════════════════════════
+
+IMPORT ERRORS:
+→ Ensure CSV format (not Excel)
+→ Check for special characters
+→ Try uploading as plain text first
+
+FORMULAS NOT WORKING:
+→ Check cell references match your data
+→ Ensure column letters are correct
+→ Look for typos in function names
+
+SHARING ISSUES:
+→ Verify link settings allow editing/viewing
+→ Check if recipient has Google account
+→ Try share link vs direct email
+
+NEED CUSTOM SETUP?
+→ All templates are fully editable
+→ Modify columns, add rows, change formulas
+→ Make them yours!
+
+════════════════════════════════════════════════════════════════════════════════
+
+Questions? Each sheet has sample data showing how it works. Copy the pattern
+and make it work for your situation.
+
+Version: 1.0 | January 2024

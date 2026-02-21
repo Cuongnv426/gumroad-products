@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Prompts Library - Productivity Edition</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @page {
+            size: A4;
+            margin: 20mm;
+            @bottom-center {
+                content: "Page " counter(page) " of " counter(pages);
+                font-size: 10pt;
+                color: #999;
+            }
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #1F2937;
+            background: white;
+        }
+        
+        .cover-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            page-break-after: always;
+            background: linear-gradient(135deg, #1E3A8A 0%, #059669 100%);
+            color: white;
+        }
+        
+        .cover-page h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        
+        .cover-page .subtitle {
+            font-size: 24px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        .cover-page .description {
+            font-size: 14px;
+            margin-bottom: 60px;
+            text-align: center;
+            line-height: 1.8;
+        }
+        
+        .cover-page .meta {
+            font-size: 12px;
+            opacity: 0.8;
+            text-align: center;
+        }
+        
+        .toc-page {
+            page-break-after: always;
+            padding: 40px;
+        }
+        
+        .toc-page h2 {
+            color: #1E3A8A;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        
+        .toc-items {
+            list-style: none;
+            margin-bottom: 40px;
+        }
+        
+        .toc-items li {
+            padding: 12px 0;
+            border-bottom: 1px solid #E5E7EB;
+            font-size: 14px;
+        }
+        
+        .toc-items li strong {
+            color: #1E3A8A;
+        }
+        
+        .top-10 {
+            background: #F0F9FF;
+            padding: 20px;
+            border-left: 4px solid #059669;
+        }
+        
+        .top-10 h3 {
+            color: #1E3A8A;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        
+        .top-10 ol {
+            margin-left: 20px;
+        }
+        
+        .top-10 li {
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+        
+        .category-section {
+            page-break-inside: avoid;
+            margin-bottom: 30px;
+        }
+        
+        .category-header {
+            background: linear-gradient(90deg, #1E3A8A 0%, #0EA5E9 100%);
+            color: white;
+            padding: 16px 20px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+        
+        .prompt-item {
+            background: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 6px;
+            padding: 18px;
+            margin-bottom: 18px;
+            page-break-inside: avoid;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        
+        .prompt-title {
+            color: #1E3A8A;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .prompt-number {
+            background: #F59E0B;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .prompt-field {
+            margin-bottom: 12px;
+        }
+        
+        .prompt-field-label {
+            color: #059669;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+            display: block;
+        }
+        
+        .prompt-field-content {
+            font-size: 12px;
+            line-height: 1.6;
+            color: #374151;
+            background: #F9FAFB;
+            padding: 10px;
+            border-left: 3px solid #059669;
+            border-radius: 2px;
+        }
+        
+        .prompt-text {
+            font-style: italic;
+            color: #4B5563;
+            font-size: 11px;
+        }
+        
+        .footer-section {
+            page-break-after: always;
+            padding: 40px;
+            margin-top: 40px;
+        }
+        
+        .footer-section h2 {
+            color: #1E3A8A;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+        
+        .footer-content {
+            font-size: 13px;
+            line-height: 1.8;
+        }
+        
+        .footer-content ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-content li {
+            margin-bottom: 10px;
+        }
+        
+        @media print {
+            body { background: white; }
+            .cover-page { page-break-before: always; }
+            .toc-page { page-break-before: always; }
+            .category-section { page-break-before: auto; }
+            .prompt-item { box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+</head>
+<body>
+    <!-- COVER PAGE -->
+    <div class="cover-page">
+        <h1>ChatGPT PROMPTS LIBRARY</h1>
+        <p class="subtitle">Productivity Edition</p>
+        <p class="description">
+            50 Ready-to-Use ChatGPT Prompts<br/>
+            for Maximum Productivity
+        </p>
+        <p class="meta">Version 1.0 | January 2024</p>
+    </div>
+
+    <!-- TABLE OF CONTENTS -->
+    <div class="toc-page">
+        <h2>TABLE OF CONTENTS</h2>
+        <ul class="toc-items">
+            <li><strong>Category 1: Task Management & TODO</strong> — Prompts 1-10</li>
+            <li><strong>Category 2: Time Management & Scheduling</strong> — Prompts 11-20</li>
+            <li><strong>Category 3: Productivity Systems & Planning</strong> — Prompts 21-30</li>
+            <li><strong>Category 4: Automation & Workflow Optimization</strong> — Prompts 31-40</li>
+            <li><strong>Category 5: Goal Setting & Progress Tracking</strong> — Prompts 41-50</li>
+        </ul>
+
+        <div class="top-10">
+            <h3>⭐ Top 10 Most-Used Prompts</h3>
+            <ol>
+                <li><strong>#2 Priority Matrix</strong> — Eisenhower decision making (every Monday)</li>
+                <li><strong>#11 Weekly Audit</strong> — Understanding your time (weekly reviews)</li>
+                <li><strong>#41 Quarterly Goals</strong> — Strategic planning (quarter starts)</li>
+                <li><strong>#12 Time Blocking</strong> — Perfect schedule design</li>
+                <li><strong>#25 Weekly Review</strong> — Reflection and tracking (Fridays)</li>
+                <li><strong>#27 Procrastination Override</strong> — Getting unstuck (when stuck)</li>
+                <li><strong>#32 Email Workflow</strong> — Inbox management (30-minute task)</li>
+                <li><strong>#14 Urgent vs Important</strong> — Decision confidence</li>
+                <li><strong>#3 Task Blocker Solver</strong> — Breaking through blocks</li>
+                <li><strong>#50 Retrospective</strong> — Learning and growth (monthly reviews)</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- CATEGORY 1 -->
+    <div class="category-section">
+        <div class="category-header">Category 1: Task Management & TODO (Prompts 1-10)</div>
+        
+        <div class="prompt-item">
+            <div class="prompt-title"><span class="prompt-number">1</span>Smart Task Breakdown Prompt</div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Prompt</span>
+                <div class="prompt-field-content prompt-text">"I have this task: [TASK]. Break it down into 5-7 specific, actionable subtasks that I can realistically complete today. For each subtask, estimate the time needed and difficulty level (easy/medium/hard). Format as a numbered checklist I can use immediately."</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Use Case</span>
+                <div class="prompt-field-content">Breaking large projects into manageable daily chunks</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Example</span>
+                <div class="prompt-field-content">Input: Write a quarterly business report | Output: 1. Gather Q4 sales data (30 min-Easy) | 2. Compile customer feedback (45 min-Medium) | 3. Create charts/visuals (60 min-Medium)</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Pro Tip</span>
+                <div class="prompt-field-content">Be specific about the main task. The more detail you provide, the better the breakdown will be.</div>
+            </div>
+        </div>
+
+        <div class="prompt-item">
+            <div class="prompt-title"><span class="prompt-number">2</span>Priority Matrix Generator</div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Prompt</span>
+                <div class="prompt-field-content prompt-text">"I have these 8 tasks to do this week: [LIST TASKS]. Use the Eisenhower Matrix (urgent/important) to categorize them. Show me which I should do first, which I should schedule, which I should delegate, and which I should eliminate. Explain your reasoning for each."</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Use Case</span>
+                <div class="prompt-field-content">Deciding what to focus on when overwhelmed with competing priorities</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Example</span>
+                <div class="prompt-field-content">Lists 8 tasks across four quadrants: DO FIRST (urgent & important), SCHEDULE (important but not urgent), DELEGATE (urgent but not important), ELIMINATE (neither)</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Pro Tip</span>
+                <div class="prompt-field-content">Most productive people spend 80% of time in the "important but not urgent" quadrant.</div>
+            </div>
+        </div>
+
+        <div class="prompt-item">
+            <div class="prompt-title"><span class="prompt-number">3</span>Task Blocker Solver</div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Prompt</span>
+                <div class="prompt-field-content prompt-text">"I'm stuck on this task: [DESCRIBE BLOCKER]. What's preventing me from moving forward? Give me 3 specific, actionable steps to overcome this blocker right now."</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Use Case</span>
+                <div class="prompt-field-content">Getting unstuck when you don't know what to do or why you're procrastinating</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Example</span>
+                <div class="prompt-field-content">Input: Need to write client proposal but keep procrastinating | Output: Step 1: Write outline (5 min - reduces perfectionism) | Step 2: 25-min timer, write intro (creates momentum) | Step 3: Read aloud, fix gaps (builds confidence)</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Pro Tip</span>
+                <div class="prompt-field-content">Procrastination often masks fear of perfectionism or unclear expectations. Identify the real blocker first.</div>
+            </div>
+        </div>
+
+        <div class="prompt-item">
+            <div class="prompt-title"><span class="prompt-number">4</span>Daily Planning Template Generator</div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Prompt</span>
+                <div class="prompt-field-content prompt-text">"Create a detailed plan for my tomorrow using this info: [SCHEDULE OVERVIEW, MAIN GOALS]. Include: time blocks, break times, backup/flex time, success metrics, one success definition."</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Use Case</span>
+                <div class="prompt-field-content">Planning the perfect productive day with all commitments and energy management</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Example</span>
+                <div class="prompt-field-content">Input: 8am meeting, finish report, 3 client calls, exercise | Output: Hour-by-hour schedule with time blocks, breaks at 10am and noon, success metric defined</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Pro Tip</span>
+                <div class="prompt-field-content">Include 30% buffer time. Most plans fail because they don't account for interruptions.</div>
+            </div>
+        </div>
+
+        <div class="prompt-item">
+            <div class="prompt-title"><span class="prompt-number">5</span>Recurring Task Automation Checker</div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Prompt</span>
+                <div class="prompt-field-content prompt-text">"I do these tasks repeatedly: [LIST RECURRING TASKS]. For each one, tell me: Can it be automated? What tool? How much time saved per month? Implementation steps."</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Use Case</span>
+                <div class="prompt-field-content">Finding easy automations to free up hours of time every month</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Example</span>
+                <div class="prompt-field-content">Weekly emails via IFTTT (5 hrs/mo) | Meeting notes via Otter.ai (8 hrs/mo) | Invoicing via Stripe (4 hrs/mo) | Reminders via calendar automation (2 hrs/mo) = 19 hours recovered</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Pro Tip</span>
+                <div class="prompt-field-content">Focus on tasks done 2+ times per month. Even small automations compound to huge time savings.</div>
+            </div>
+        </div>
+
+        <div class="prompt-item">
+            <div class="prompt-title"><span class="prompt-number">6</span>Parallel Task Organizer</div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Prompt</span>
+                <div class="prompt-field-content prompt-text">"I need to juggle these [NUMBER] tasks: [LIST THEM]. Which can I do in parallel? Which must be sequential? Create a workflow showing dependencies."</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Use Case</span>
+                <div class="prompt-field-content">Managing multiple projects at once and understanding what can overlap</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Example</span>
+                <div class="prompt-field-content">Creates sequential flowchart showing which tasks have dependencies, which can overlap, critical path, timeline with overlaps to compress schedule</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Pro Tip</span>
+                <div class="prompt-field-content">Critical path analysis saves time. Many projects can be compressed 20-30% by better parallelization.</div>
+            </div>
+        </div>
+
+        <div class="prompt-item">
+            <div class="prompt-title"><span class="prompt-number">7</span>Task Estimation Calibrator</div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Prompt</span>
+                <div class="prompt-field-content prompt-text">"I estimated these tasks would take [TIMES] but they usually take [ACTUAL TIMES]. Show me the pattern. Give me a personal formula to estimate more accurately."</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Use Case</span>
+                <div class="prompt-field-content">Getting better at time estimates by understanding your personal bias</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Example</span>
+                <div class="prompt-field-content">Est 1hr→Actual 2hrs, Est 2hrs→Actual 3.5hrs | Output: Shows 1.5-1.75x multiplier pattern. Suggests 15% buffer and time-boxing technique.</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Pro Tip</span>
+                <div class="prompt-field-content">Track estimates vs actuals for 2+ weeks first. Most people consistently underestimate by 1.5-2x.</div>
+            </div>
+        </div>
+
+        <div class="prompt-item">
+            <div class="prompt-title"><span class="prompt-number">8</span>Context Switching Reducer</div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Prompt</span>
+                <div class="prompt-field-content prompt-text">"I context switch between [LIST TASKS/APPS]. Create a schedule that: batches similar tasks, minimizes app switching, protects deep work time, handles urgent items."</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Use Case</span>
+                <div class="prompt-field-content">Eliminating the #1 productivity killer - constant context switching</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Example</span>
+                <div class="prompt-field-content">Before: Jump between emails, Slack, coding, meetings | After: Batch emails 3x daily, Slack in 2 blocks, 2hr coding blocks, meetings in afternoon</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Pro Tip</span>
+                <div class="prompt-field-content">Each context switch costs 15-25 minutes of refocusing time. Aim for 2-3 switches per day max.</div>
+            </div>
+        </div>
+
+        <div class="prompt-item">
+            <div class="prompt-title"><span class="prompt-number">9</span>Completed Tasks Analyzer</div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Prompt</span>
+                <div class="prompt-field-content prompt-text">"Over the past [WEEK/MONTH], I completed these tasks: [LIST]. What patterns do you see? What energized vs drained me? What should I do more/less of?"</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Use Case</span>
+                <div class="prompt-field-content">Learning from what actually happened to improve future planning</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Example</span>
+                <div class="prompt-field-content">Input: List of 20 completed tasks from past week | Output: Energy patterns, high-impact vs low-impact work, specific recommendations for next week</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Pro Tip</span>
+                <div class="prompt-field-content">Include small tasks too. Most people are surprised what actually energizes vs drains them.</div>
+            </div>
+        </div>
+
+        <div class="prompt-item">
+            <div class="prompt-title"><span class="prompt-number">10</span>Task Refusal Decision Maker</div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Prompt</span>
+                <div class="prompt-field-content prompt-text">"Someone asked me to do this: [TASK DESCRIPTION]. Should I say yes or no? Evaluate: strategic fit, energy/time cost, opportunity cost, real urgency."</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Use Case</span>
+                <div class="prompt-field-content">Protecting your time and energy with confidence and professional language</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Example</span>
+                <div class="prompt-field-content">Input: Manager asked to lead new initiative on top of current work | Output: Decision framework with fit analysis, cost breakdown, alternatives, confidence level with scripts</div>
+            </div>
+            <div class="prompt-field">
+                <span class="prompt-field-label">Pro Tip</span>
+                <div class="prompt-field-content">Use this when you're unsure about saying no. The structured framework helps you decide and respond professionally.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CATEGORIES 2-5 SUMMARY (condensed for space) -->
+    <div class="category-section">
+        <div class="category-header">Category 2: Time Management & Scheduling (Prompts 11-20)</div>
+        <p style="padding: 20px; font-size: 13px; line-height: 1.8;">
+            <strong>11. Weekly Time Audit Creator</strong> — Understand where time actually goes<br/>
+            <strong>12. Time Block Template Designer</strong> — Create your ideal weekly structure<br/>
+            <strong>13. Meeting Impact Analyzer</strong> — Reduce unnecessary meetings<br/>
+            <strong>14. Urgent vs Important Distinguisher</strong> — Make better decisions<br/>
+            <strong>15. Energy-Based Schedule Optimizer</strong> — Work with your natural rhythm<br/>
+            <strong>16. Calendar Blocking Guide</strong> — Protect focus time<br/>
+            <strong>17. Deadline Reverse Planner</strong> — Never miss deadlines<br/>
+            <strong>18. Batch Processing Maximizer</strong> — Save 5-10 hours weekly<br/>
+            <strong>19. Break Optimization Protocol</strong> — Better recovery = higher productivity<br/>
+            <strong>20. Time Reclamation Action Plan</strong> — Find 5-10 free hours per week
+        </p>
+    </div>
+
+    <div class="category-section">
+        <div class="category-header">Category 3: Productivity Systems & Planning (Prompts 21-30)</div>
+        <p style="padding: 20px; font-size: 13px; line-height: 1.8;">
+            <strong>21. GTD Workflow Setup Assistant</strong> — Implement Getting Things Done<br/>
+            <strong>22. Second Brain Setup Guide</strong> — Organize all your knowledge<br/>
+            <strong>23. Goal Setting Framework Creator</strong> — Set goals you'll actually achieve<br/>
+            <strong>24. Habit Stacking Formula</strong> — Build habits that stick<br/>
+            <strong>25. Weekly Review Template</strong> — Create accountability and growth<br/>
+            <strong>26. Decision Fatigue Reducer</strong> — Save mental energy<br/>
+            <strong>27. Procrastination Override Protocol</strong> — Never be blocked again<br/>
+            <strong>28. Seasonal Planning Strategy</strong> — Strategic but actionable planning<br/>
+            <strong>29. Reflection System Designer</strong> — Learn and grow from experience<br/>
+            <strong>30. Saying No Framework</strong> — Protect your time and energy
+        </p>
+    </div>
+
+    <div class="category-section">
+        <div class="category-header">Category 4: Automation & Workflow Optimization (Prompts 31-40)</div>
+        <p style="padding: 20px; font-size: 13px; line-height: 1.8;">
+            <strong>31. Tool Stack Optimizer</strong> — Turn messy tools into unified system<br/>
+            <strong>32. Email Workflow Automator</strong> — Email from time-sink to 30 minutes<br/>
+            <strong>33. Notification System Architect</strong> — Peace and focus without missing things<br/>
+            <strong>34. Content Repurposing Workflow</strong> — Multiply content impact 5-10x<br/>
+            <strong>35. Meeting Preparation Automator</strong> — Prep from 15 min to 2 min<br/>
+            <strong>36. Document Generation Automator</strong> — Create 5 documents in 1's time<br/>
+            <strong>37. Lead/Opportunity Workflow</strong> — Automate your sales funnel<br/>
+            <strong>38. Data Sync Automation</strong> — Consistency across all tools<br/>
+            <strong>39. Reporting Automator</strong> — Reports that generate themselves<br/>
+            <strong>40. Feedback Loop Automation</strong> — Act on feedback in real-time
+        </p>
+    </div>
+
+    <div class="category-section">
+        <div class="category-header">Category 5: Goal Setting & Progress Tracking (Prompts 41-50)</div>
+        <p style="padding: 20px; font-size: 13px; line-height: 1.8;">
+            <strong>41. Quarterly Goal-Setting Sprint</strong> — Strategic goal-setting with reflection<br/>
+            <strong>42. OKR Generator</strong> — Objectives & Key Results system<br/>
+            <strong>43. Progress Dashboard Designer</strong> — Track progress that motivates<br/>
+            <strong>44. Habit Tracking Protocol</strong> — Build habits with visible progress<br/>
+            <strong>45. Milestone Breakthrough Framework</strong> — Big goals become achievable<br/>
+            <strong>46. Learning Goal Architect</strong> — Learning that actually sticks<br/>
+            <strong>47. Accountability System Designer</strong> — Hit goals with support<br/>
+            <strong>48. Personal Key Metrics Dashboard</strong> — Know your actual metrics<br/>
+            <strong>49. Failure Analysis Framework</strong> — Turn failures into future wins<br/>
+            <strong>50. Retrospective & Future Planning Session</strong> — Continuous learning and evolution
+        </p>
+    </div>
+
+    <!-- HOW TO USE -->
+    <div class="footer-section">
+        <h2>How To Use This Library</h2>
+        <div class="footer-content">
+            <h3 style="color: #1E3A8A; margin: 20px 0 15px 0; font-size: 16px;">The 3-Minute Quick Start</h3>
+            <ol>
+                <li>Find a prompt matching your current challenge</li>
+                <li>Copy the exact prompt text</li>
+                <li>Fill in [BRACKETS] with your specific information</li>
+                <li>Paste into ChatGPT and hit enter</li>
+                <li>Use the output immediately</li>
+            </ol>
+
+            <h3 style="color: #1E3A8A; margin: 20px 0 15px 0; font-size: 16px;">Best Practices</h3>
+            <ul>
+                <li><strong>Be Specific</strong> — More detail yields better output</li>
+                <li><strong>Go Deep</strong> — Ask follow-up questions for insights</li>
+                <li><strong>Iterate</strong> — Run the same prompt monthly to track evolution</li>
+                <li><strong>Personalize</strong> — Modify to match your language and style</li>
+                <li><strong>Experiment</strong> — Try different prompts for the same problem</li>
+            </ul>
+
+            <h3 style="color: #1E3A8A; margin: 20px 0 15px 0; font-size: 16px;">Quick Category Selection</h3>
+            <ul>
+                <li>Overwhelmed with tasks? → Category 1 (Task Management)</li>
+                <li>Drowning in meetings? → Category 2 (Time Management)</li>
+                <li>Need better systems? → Category 3 (Productivity Systems)</li>
+                <li>Too much manual work? → Category 4 (Automation)</li>
+                <li>Struggling with goals? → Category 5 (Goal Setting)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <h2>Integration Ideas</h2>
+        <div class="footer-content">
+            <p style="margin-bottom: 20px;">Use these prompts in a system that works for you:</p>
+            <ul>
+                <li><strong>Daily:</strong> Use Prompts #4, #15, #27</li>
+                <li><strong>Weekly:</strong> Use Prompts #25, #14, #11</li>
+                <li><strong>Monthly:</strong> Use Prompts #48, #50, #9</li>
+                <li><strong>Quarterly:</strong> Use Prompts #41, #42, #23</li>
+                <li><strong>When Stuck:</strong> Use Prompts #3, #27, #14</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

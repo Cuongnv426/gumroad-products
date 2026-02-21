@@ -1,0 +1,13 @@
+Project Name,Task,Owner,Timeline Start,Timeline End,Duration (weeks),Status,Progress %,Priority,Notes
+Website Redesign,Design mockups,Sarah,2024-01-05,2024-01-19,2,Completed,100%,High,All pages mockup completed and approved
+Website Redesign,Development setup,James,2024-01-20,2024-02-02,2,In Progress,60%,High,Database migration needed this week
+Website Redesign,Content migration,Maria,2024-02-03,2024-02-16,2,Not Started,0%,High,Waiting for development to be ready
+Website Redesign,Testing & launch,James,2024-02-17,2024-03-01,2,Not Started,0%,High,QA will begin once dev is 90% complete
+Mobile App v2,Feature planning,David,2024-01-08,2024-01-22,2,Completed,100%,High,Requirements document finalized
+Mobile App v2,API development,James,2024-01-23,2024-02-20,4,In Progress,45%,High,3 of 7 endpoints complete
+Mobile App v2,Frontend dev,Carlos,2024-02-21,2024-03-20,4,Not Started,0%,High,Will start after API is 80% done
+Mobile App v2,User testing,Sarah,2024-03-21,2024-04-04,2,Not Started,0%,Medium,Recruit beta testers in advance
+Product Launch,Market research,Maria,2024-01-02,2024-01-16,2,Completed,100%,High,Report delivered to leadership
+Product Launch,Messaging & positioning,Sarah,2024-01-17,2024-01-31,2,In Progress,70%,High,Brand alignment review scheduled
+Product Launch,Sales materials,David,2024-02-01,2024-02-14,2,Not Started,0%,High,Waiting for final positioning
+Product Launch,Go-to-market execution,James,2024-02-15,2024-02-28,2,Not Started,0%,High,Team will execute after materials ready

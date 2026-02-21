@@ -1,0 +1,21 @@
+Date,Category,Description,Amount,Type,Notes,Recurring
+2024-01-01,Income,Client A - Monthly retainer,5000,Income,Predictable monthly payment,Monthly
+2024-01-01,Income,Product sales,2340,Income,Average weekly sales,"weekly (varies)"
+2024-01-02,Expenses - Salary,Team payroll,12000,Expense,3 staff members,$12000/month
+2024-01-03,Expenses - Rent,Office lease,2500,Expense,Downtown location,Monthly
+2024-01-04,Expenses - Software,Adobe Suite,52.99,Expense,Design tools subscription,Monthly
+2024-01-05,Expenses - Software,HubSpot Pro,300,Expense,CRM platform,Monthly
+2024-01-06,Expenses - Software,Slack,150,Expense,Team communication,Monthly
+2024-01-07,Expenses - Utilities,Internet & Phone,180,Expense,Office internet + mobile lines,Monthly
+2024-01-08,Expenses - Marketing,Google Ads,800,Expense,Campaign spend this week,Variable
+2024-01-09,Expenses - Travel,Client meeting trip,420,Expense,Flight + hotel,One-time
+2024-01-10,Expenses - Supplies,Office supplies,95.50,Expense,Paper, pens, ink cartridges,Variable
+2024-01-11,Expenses - Insurance,Business liability,250,Expense,Monthly premium,"Quarterly (divided)"
+2024-01-12,Income,Client B - Project work,3500,Income,Custom development,One-time
+2024-01-13,Expenses - Equipment,Monitor upgrade,399.99,Expense,New 4K displays,One-time
+2024-01-14,Expenses - Professional Development,Training course,299,Expense,Marketing automation certification,One-time
+2024-01-15,Expenses - Meals & Entertainment,Client dinner,125,Expense,Team building,Variable
+2024-01-16,Expenses - Bank,Transaction fees,35,Expense,Merchant processing fees,Variable
+2024-01-17,Income,Consulting - Advisory board,1000,Income,Monthly retainer,Monthly
+2024-01-18,Expenses - Contingency,Unexpected repair,200,Expense,Copier malfunction,One-time
+2024-01-19,Income,Affiliate commissions,145.67,Income,Partner program,Variable
